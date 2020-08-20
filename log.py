@@ -52,7 +52,7 @@ if __name__ == "__main__":
 		filePath = os.path.join(newDirectory, f'{fileName}.log')
 	else:
 		# if args.path has no value; assign current working directory
-		currentDirectory = os.path.dirname(os.path.abspath(__file__))
+		currentDirectory = os.getcwd()
 		# combine direcotry path 'filePath' with 'fileName' to write file
 		filePath = os.path.join(currentDirectory, f'{fileName}.log')
 
